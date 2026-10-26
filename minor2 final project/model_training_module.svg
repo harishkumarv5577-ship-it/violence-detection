@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.45" stop-color="#123047"/>
+      <stop offset="1" stop-color="#22143a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ec4899"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:56px;font-weight:800;fill:#ffffff}
+      .sub{font-family:Arial,Helvetica,sans-serif;font-size:27px;fill:#cbd5e1}
+      .head{font-family:Arial,Helvetica,sans-serif;font-size:31px;font-weight:800;fill:#ffffff}
+      .boxText{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:800;fill:#0f172a}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;fill:#ffffff}
+      .note{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#dbeafe}
+      .caption{font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:700;fill:#e2e8f0}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="130" cy="130" r="95" fill="#38bdf8" opacity="0.13"/>
+  <circle cx="1450" cy="740" r="130" fill="#facc15" opacity="0.12"/>
+  <circle cx="1240" cy="130" r="85" fill="#ec4899" opacity="0.11"/>
+
+  <text x="800" y="82" text-anchor="middle" class="title">Module 4: Dataset and Model Training</text>
+  <text x="800" y="125" text-anchor="middle" class="sub">Preparing violence and non-violence videos, extracting frames, training the deep learning model, and saving the checkpoint</text>
+
+  <g transform="translate(90 230)" filter="url(#shadow)">
+    <rect x="0" y="0" width="250" height="145" rx="22" fill="url(#blue)"/>
+    <rect x="35" y="34" width="82" height="58" rx="8" fill="#0f172a" opacity="0.88"/>
+    <circle cx="76" cy="63" r="19" fill="#38bdf8"/>
+    <polygon points="70,51 70,75 92,63" fill="#ffffff"/>
+    <rect x="135" y="34" width="82" height="58" rx="8" fill="#0f172a" opacity="0.88"/>
+    <circle cx="176" cy="63" r="19" fill="#ef4444"/>
+    <polygon points="170,51 170,75 192,63" fill="#ffffff"/>
+    <text x="125" y="122" text-anchor="middle" class="boxText">Video Dataset</text>
+  </g>
+
+  <path d="M360 302 H465" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round"/>
+  <polygon points="465,302 440,286 440,318" fill="#e2e8f0"/>
+
+  <g transform="translate(485 230)" filter="url(#shadow)">
+    <rect x="0" y="0" width="250" height="145" rx="22" fill="url(#green)"/>
+    <rect x="42" y="30" width="52" height="42" rx="7" fill="#ecfeff"/>
+    <rect x="102" y="30" width="52" height="42" rx="7" fill="#dcfce7"/>
+    <rect x="162" y="30" width="52" height="42" rx="7" fill="#fef9c3"/>
+    <rect x="72" y="80" width="52" height="42" rx="7" fill="#e0f2fe"/>
+    <rect x="132" y="80" width="52" height="42" rx="7" fill="#fce7f3"/>
+    <text x="125" y="122" text-anchor="middle" class="boxText">Frame Extraction</text>
+  </g>
+
+  <path d="M755 302 H860" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round"/>
+  <polygon points="860,302 835,286 835,318" fill="#e2e8f0"/>
+
+  <g transform="translate(880 230)" filter="url(#shadow)">
+    <rect x="0" y="0" width="250" height="145" rx="22" fill="url(#orange)"/>
+    <rect x="45" y="34" width="160" height="70" rx="12" fill="#111827" opacity="0.9"/>
+    <line x1="70" y1="55" x2="180" y2="55" stroke="#facc15" stroke-width="8" stroke-linecap="round"/>
+    <line x1="70" y1="78" x2="158" y2="78" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="184" cy="78" r="12" fill="#ffffff"/>
+    <text x="125" y="122" text-anchor="middle" class="boxText">Preprocessing</text>
+  </g>
+
+  <path d="M1150 302 H1255" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round"/>
+  <polygon points="1255,302 1230,286 1230,318" fill="#e2e8f0"/>
+
+  <g transform="translate(1275 230)" filter="url(#shadow)">
+    <rect x="0" y="0" width="250" height="145" rx="22" fill="url(#pink)"/>
+    <circle cx="80" cy="55" r="16" fill="#ffffff"/>
+    <circle cx="155" cy="36" r="16" fill="#ffffff"/>
+    <circle cx="170" cy="93" r="16" fill="#ffffff"/>
+    <circle cx="80" cy="100" r="16" fill="#ffffff"/>
+    <line x1="96" y1="55" x2="139" y2="39" stroke="#ffffff" stroke-width="5"/>
+    <line x1="96" y1="100" x2="154" y2="93" stroke="#ffffff" stroke-width="5"/>
+    <line x1="155" y1="52" x2="170" y2="77" stroke="#ffffff" stroke-width="5"/>
+    <line x1="80" y1="71" x2="80" y2="84" stroke="#ffffff" stroke-width="5"/>
+    <text x="125" y="122" text-anchor="middle" class="boxText">Model Training</text>
+  </g>
+
+  <g transform="translate(190 470)">
+    <rect x="0" y="0" width="1220" height="245" rx="26" fill="#0f172a" opacity="0.92" filter="url(#shadow)"/>
+    <text x="55" y="58" class="head">Training Workflow</text>
+    <text x="55" y="104" class="note">1. Violence and non-violence videos are collected and divided for training and validation.</text>
+    <text x="55" y="143" class="note">2. Frames are extracted, resized, normalized, and arranged into video sequences.</text>
+    <text x="55" y="182" class="note">3. MobileNetV3 extracts spatial features from each frame, while GRU learns motion patterns across frames.</text>
+    <text x="55" y="221" class="note">4. The trained model checkpoint is saved as best.pt and used for violence prediction in the website.</text>
+  </g>
+
+  <g transform="translate(265 770)">
+    <rect x="0" y="0" width="245" height="58" rx="29" fill="#0284c7"/>
+    <text x="122" y="37" text-anchor="middle" class="small">MobileNetV3</text>
+    <rect x="290" y="0" width="245" height="58" rx="29" fill="#7c3aed"/>
+    <text x="412" y="37" text-anchor="middle" class="small">GRU Classifier</text>
+    <rect x="580" y="0" width="245" height="58" rx="29" fill="#16a34a"/>
+    <text x="702" y="37" text-anchor="middle" class="small">best.pt Checkpoint</text>
+    <rect x="870" y="0" width="245" height="58" rx="29" fill="#dc2626"/>
+    <text x="992" y="37" text-anchor="middle" class="small">Violence / Normal</text>
+  </g>
+</svg>
